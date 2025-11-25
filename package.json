@@ -1,18 +1,14 @@
-     {
-  "name": "meu_site_backend",
-  "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
   },
   "dependencies": {
     "express": "^5.1.0",
-    "body-parser": "^2.2.1",
-    "multer": "^2.0.2"
-  }
-}
- "",
-  "license": "ISC",
+    "body-pa{
+  "name": "megastore",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "license": "ISC"
+}  "license": "ISC",
   "type": "commonjs",
   "dependencies": {
     "body-parser": "^2.2.1",
