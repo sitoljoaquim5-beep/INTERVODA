@@ -1,0 +1,22 @@
+     {
+  "name": "meu_site_backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "body-parser": "^2.2.1",
+    "multer": "^2.0.2"
+  }
+}
+ "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  }
+}

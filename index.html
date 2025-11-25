@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja de Megas Online</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Bem-vindo à Loja de Megas</h1>
+<nav>
+<a href="index.html">Home</a> |
+<a href="about.html">Sobre</a> |
+<a href="contact.html">Comprar Megas</a> |
+<a href="admin.html">Admin</a>
+</nav>
+<hr>
+<h2>Ofertas de Outubro 2025</h2>
+<ul>
+<li>600MB - 10MT</li>
+<li>800MB - 15MT</li>
+<li>1024MB - 18MT</li>
+<li>1200MB - 22MT</li>
+<li>2048MB - 36MT</li>
+</ul>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre a Loja</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Sobre Nós</h1>
+<p>Somos a sua loja de venda de megas online, rápida e confiável.</p>
+<a href="index.html">Voltar</a>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comprar Megas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Comprar Megas</h1>
+<form action="/enviar-comprovativo" method="POST" enctype="multipart/form-data">
+<label>Nome:</label><br>
+<input type="text" name="nome" required><br>
+<label>Telefone:</label><br>
+<input type="text" name="telefone" required><br>
+<label>Pacote:</label><br>
+<select name="pacote">
+  <option value="600MB">600MB - 10MT</option>
+  <option value="800MB">800MB - 15MT</option>
+  <option value="1024MB">1024MB - 18MT</option>
+  <option value="1200MB">1200MB - 22MT</option>
+  <option value="2048MB">2048MB - 36MT</option>
+</select><br>
+<label>Comprovativo de Pagamento:</label><br>
+<input type="file" name="comprovativo" required><br><br>
+<button type="submit">Enviar</button>
+</form>
+<a href="index.html">Voltar</a>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel Admin</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Painel Administrativo</h1>
+<div id="pedidos"></div>
+<script src="script.js"></script>
+<a href="index.html">Voltar</a>
+</body>
+</html>
+<script src="script.js"></script>
+<link rel="stylesheet" href="styles.css">

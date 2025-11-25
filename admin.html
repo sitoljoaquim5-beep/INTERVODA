@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Administrativo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Painel Administrativo</h1>
+  <table border="1" cellpadding="5">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Pacote</th>
+        <th>Comprovativo</th>
+      </tr>
+    </thead>
+    <tbody id="pedidos-lista">
+      <!-- Pedidos vão aparecer aqui -->
+    </tbody>
+  </table>
+
+  <script>
+    fetch('/pedidos.json')
+      .then(response => response.json())
+      .then(data => {
+        const tbody = document.getElementById('pedidos-lista');
+        data.forEach(pedido => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td>${pedido.nome}</td>
+            <td>${pedido.telefone}</td>
+            <td>${pedido.pacote}</td>
+            <td><a href="uploads/${pedido.comprovativo}" target="_blank">Ver</a></td>
+          `;
+          tbody.appendChild(tr);
+        });
+      })
+      .catch(err => console.error('Erro ao carregar pedidos:', err));
+  </script>
+</body>
+</html>
